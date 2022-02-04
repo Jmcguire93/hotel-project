@@ -12,6 +12,6 @@ class Hotel
   end
 
   def name 
-    arr = @name.split(" ").map(&:capitalize).join(" ")
+    @name.split(" ").map(&:capitalize).join(" ")
   end
 end
