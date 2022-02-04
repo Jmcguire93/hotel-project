@@ -22,4 +22,16 @@ class Hotel
   def room_exists?(name)
     @rooms.has_key?(name)
   end
+
+  def check_in(person, room)
+    if self.room_exists?(room)
+      if @rooms[room].add_occupant(person)
+        puts "check in successful"
+      else
+        puts "sorry, room is full"
+      end
+    else
+      puts "sorry, room does not exist"
+    end
+  end
 end
