@@ -18,4 +18,8 @@ class Hotel
   def rooms 
     @rooms
   end
+
+  def room_exists?(name)
+    @rooms.has_key?(name)
+  end
 end
