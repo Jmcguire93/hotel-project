@@ -14,4 +14,8 @@ class Hotel
   def name 
     @name.split(" ").map(&:capitalize).join(" ")
   end
+
+  def rooms 
+    @rooms
+  end
 end
